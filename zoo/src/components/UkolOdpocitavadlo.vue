@@ -4,7 +4,8 @@ const cislo = ref(10);
 
 
 const odpocet = setInterval(() => {
-    cislo.value--; 
+cislo.value--;
+ 
     
     if (cislo.value <= 0) {
         cislo.value = "HOTOVO!"

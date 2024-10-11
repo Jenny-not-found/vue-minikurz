@@ -1,10 +1,15 @@
 <script setup>
-import {ref} from "vue";
+import {ref} from 'vue';
 
 const typInputu = ref("password");
 
+function zmenTyp() {
+    typInputu.value = "text";
+}
+
 const nazevOdkazu = ref("Nic");
 const cilOdkazu = ref("#");
+
 function zmenCilOdkazu(argNazev, argAdresa) {
     nazevOdkazu.value = argNazev;
     cilOdkazu.value = argAdresa;
